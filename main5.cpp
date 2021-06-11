@@ -88,7 +88,7 @@ int main() {
   string *g3;
   g3= new string{"romance"};
   
-  string genSeries[]={*g1,*g2,*g2};
+  string genSeries[]={*g1,*g2,*g3};
   
  	
   //la evaluación de los videos es en un rango de 1-10
