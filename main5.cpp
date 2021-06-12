@@ -95,10 +95,9 @@ int main() {
   
   //3 películas
   Pelicula p1(58743,"Donnie Darko",90.0,"Sci-fi",10);
-  //Pelicula *p1=new Pelicula(58743,"Donnie Darko",90.0,"Sci-fi",10);
   Pelicula p2(66987,"Y dónde están las rubias",75.0,"Comedia",9);
   Pelicula p3(99856,"Clueless",85.0,"Romance-Comedia",8);
- // Pelicula *pnt1=p1;
+
   //arreglo peliculas
   Pelicula arrPelis[]={p1,p2,p3};
    
@@ -133,18 +132,17 @@ int main() {
 	  		} else if(i==2){
 	  			sery=3;
 	  		}
-  	/*	cout<<"Ingrese evaluación para la temporada "<<j+1<<" de la serie "<<sNames[sery]<<": "<<endl;
-  		cin>>evalu;*/
+  	
   		evalu=j+i+2;
 		Temporada t(arrEpisodios,evalu,3); 	
   		 arrTemps[j]=t;
 	  }
 	  
-	//  Serie(int _ID,string _nombre,float _duracion,string _genero,int _nEpisodios,int _nTemps,Temporada * arr){
+	
 	  
 	  Serie s(seriesID[i],sNames[i],durSeries[i],genSeries[i],nTemporadasTot,nSeriesTot,arrTemps); 	
   	  arrSeries[i]=s;
-  	//  arrSeries[i].getSerie();
+  	
   	  arrSeries[i].evaluacion();
 	  
   	}
